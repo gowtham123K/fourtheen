@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages{
-        stage("checkout SCM"){
+        stage("clone repo"){
             steps{
                 git url: "https://github.com/gowtham123K/fourtheen.git", branch:"main"
             }
